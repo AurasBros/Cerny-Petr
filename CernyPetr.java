@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * v. 3
+ * 
  * @author jan1h
  */
 public class CernyPetr extends Application {
