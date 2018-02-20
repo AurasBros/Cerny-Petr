@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="618.0" prefWidth="1000.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cernypetr.Controller">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+      <HBox fx:id="panel" layoutX="102.0" layoutY="96.0" prefHeight="370.0" prefWidth="600.0" styleClass="pozadi" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="udaje" prefWidth="350.0" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <AnchorPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox layoutX="75.0" layoutY="45.0" styleClass="sede-pozadi" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+                           </padding>
+                           <children>
+                              <TextField fx:id="inNameLogin" prefHeight="35.0" prefWidth="260.0" promptText="Uživatelské jméno" styleClass="text-ramecek" />
+                              <PasswordField fx:id="inPswLogin" promptText="Heslo" styleClass="text-ramecek" />
+                              <AnchorPane VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="btnLogin" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleLoginAction" prefHeight="40.0" styleClass="tlacitko" text="Přihlásit se" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="12.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <Label fx:id="outMssg" layoutY="242.0" prefHeight="15.0" styleClass="popis-italic" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <VBox styleClass="sede-pozadi">
+                     <children>
+                        <AnchorPane prefHeight="35.0">
+                           <children>
+                              <Label alignment="CENTER" layoutY="6.0" styleClass="popis-italic" text="Nemáš účet? Registruj se." textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <TextField fx:id="inNameRegister" prefHeight="35.0" prefWidth="260.0" promptText="Uživatelské jméno" styleClass="text-ramecek" />
+                        <PasswordField fx:id="inPswRegister" promptText="Heslo" styleClass="text-ramecek" />
+                        <PasswordField fx:id="inPswRegisterRepeat" promptText="Zopakujte heslo" styleClass="text-ramecek" />
+                        <AnchorPane VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="btnRegister" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleRegisterAction" prefHeight="40.0" styleClass="tlacitko" stylesheets="@styles.css" text="Registrovat se" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="12.0" />
+                           </padding>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </VBox>
+            <AnchorPane prefHeight="578.0" prefWidth="548.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox fx:id="nadpis" alignment="CENTER" layoutX="159.0" layoutY="221.0" prefHeight="250.0" prefWidth="357.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="220.0">
+                     <children>
+                        <Label styleClass="nadpis" stylesheets="@styles.css" text="Černý" />
+                        <Label styleClass="nadpis" stylesheets="@styles.css" text="Petr" textFill="WHITE">
+                           <font>
+                              <Font size="72.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

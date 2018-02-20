@@ -1,0 +1,58 @@
+.pozadi {
+    -fx-background-image: url("pozadi.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+    -fx-font-family: "Century Gothic";
+}
+
+.sede-pozadi {
+  -fx-background-color: rgba(135, 135, 135, 0.5);
+  -fx-font-family: "Century Gothic";
+}
+
+.text-ramecek {
+  -fx-background-radius: 5;
+  -fx-font-family: "Century Gothic";
+  -fx-pref-height: 35;
+  -fx-min-height: 35;
+  -fx-max-height: 50;
+}
+
+.tlacitko {
+  -fx-background-color: black;
+  -fx-font-size: 18px;
+  -fx-text-fill: white;
+  -fx-background-radius: 8;
+  -fx-font-weight: bold;
+  -fx-font-family: "Century Gothic";
+  -fx-cursor: hand;
+  -fx-pref-height: 35;
+  -fx-min-height: 35;
+  -fx-max-height: 50;
+}
+
+.nadpis {
+  -fx-font-family: "Century Gothic";
+  -fx-font-size: 120;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.popis-italic {
+  -fx-font-family: "Century Gothic";
+  -fx-font-style: italic;
+  -fx-font-size: 18;
+}
+
+.player-name {
+  -fx-font-family: "Century Gothic";
+  -fx-font-size: 18;
+  -fx-text-fill: white;
+
+}
+
+.hide {
+  visibility: hidden;
+}
