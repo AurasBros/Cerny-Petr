@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 /**
  * 
- * @author jan1h
+ * @author auras bros
  */
 public class CernyPetr extends Application {
     
