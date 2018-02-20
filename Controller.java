@@ -48,8 +48,10 @@ public class Controller implements Initializable {
         if (login.getMssg().equals("Prihlaseni probehlo uspesne.")) {
                 //udaje.setManaged(false);
                 //udaje.managedProperty().bind(udaje.visibleProperty());
-                udaje.setVisible(false);
-                nadpis.setVisible(false);
+                //udaje.setVisible(false);
+                //nadpis.setVisible(false);
+                
+                panel.getChildren().clear();
                 
                 
                 HBox box = new HBox();
